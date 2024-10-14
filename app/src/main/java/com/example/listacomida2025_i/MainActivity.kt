@@ -13,7 +13,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.listacomida2025_i.data.DataSource
 import com.example.listacomida2025_i.ui.theme.ListaComida2025ITheme
-import com.example.listacomida2025_i.ui.views.MenuCardDisplay
 import com.example.listacomida2025_i.ui.views.MenuCardList
 
 class MainActivity : ComponentActivity() {
@@ -30,7 +29,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun MenuApp(){
-    MenuCardList(platilloList = DataSource().loadPlatillos()
+    MenuCardList(platilloList = DataSource().LoadPlatillos()
         )
 }
 
